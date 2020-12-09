@@ -54,9 +54,8 @@ func partA(input []string) {
 func patchInstruction(instruction string) string {
 	if instruction[0] == 'n' {
 		return strings.Replace(instruction, "nop", "jmp", 1)
-	} else {
-		return strings.Replace(instruction, "jmp", "nop", 1)
 	}
+	return strings.Replace(instruction, "jmp", "nop", 1)
 }
 
 func partB(input []string) {
@@ -72,7 +71,6 @@ func partB(input []string) {
 			}
 		}
 	}
-
 }
 
 func main() {
